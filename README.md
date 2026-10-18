@@ -14,7 +14,7 @@ I file sono nelle [release](../../releases) del repository, non nel codice.
 | File | Cosa contiene |
 |---|---|
 | `indice.json` | elenco delle province: versione, dimensione, impronta sha256 dello zip, province confinanti, contorno semplificato |
-| `<SIGLA>.zip` | pacchetto di una provincia (es. `PR.zip`): celle, confine, punti meteo, ritrovamenti pubblici, parametri di calcolo |
+| `<SIGLA>-<versione>.zip` | pacchetto di una provincia (es. `PR-20261018T173506.zip`): celle, confine, punti meteo, ritrovamenti pubblici, parametri di calcolo. Ogni versione ha un nome suo, così una cache non può mai dare un pacchetto vecchio con un indice nuovo |
 
 L'app legge `indice.json` all'indirizzo
 `https://github.com/caombog/ndom-dati/releases/latest/download/indice.json` e scarica solo le province scelte.
